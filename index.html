@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopLab | Cars</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">ShopLab</div>
+            <div class="nav-links">
+                <a href="#">Cars for Sale</a>
+                <a href="#">Sell Your Car</a>
+                <a href="#">Reviews</a>
+            </div>
+            <div class="nav-user">
+                <a href="#">Sign in</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Filters</h2>
+                <button id="clear-filters" class="clear-btn">Clear all</button>
+            </div>
+            <form id="filters-form" class="filters-container">
+                <!-- Filters injected via JS -->
+            </form>
+        </aside>
+
+        <main class="main-content">
+            <div class="results-header">
+                <h1 id="results-count">Loading vehicles...</h1>
+                <div class="sort-container">
+                    <label for="sort-select">Sort by:</label>
+                    <select id="sort-select">
+                        <option value="relevance">Relevance</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+            <div class="product-grid" id="product-grid">
+                <!-- Products injected via JS -->
+            </div>
+        </main>
+    </div>
+
+    <!-- SVGs for injection -->
+    <svg style="display: none;">
+        <symbol id="icon-paint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c1.38 0 2.5-1.12 2.5-2.5 0-.53-.21-1.04-.56-1.41C13.59 17.74 13.3 17.15 13.3 16.5c0-1.38 1.12-2.5 2.5-2.5h1.2c3.59 0 6.5-2.91 6.5-6.5C23.5 4.46 18.33 2 12 2z"></path>
+        </symbol>
+        <symbol id="icon-seat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 18v3"></path>
+            <path d="M20 18v3"></path>
+            <path d="M5 18h14v-2c0-2.21-1.79-4-4-4H9c-2.21 0-4 1.79-4 4v2z"></path>
+            <path d="M6 12V8c0-3.31 2.69-6 6-6s6 2.69 6 6v4"></path>
+        </symbol>
+        <symbol id="icon-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13"></rect>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+        </symbol>
+    </svg>
+
+    <script src="script.js"></script>
+</body>
+</html>
